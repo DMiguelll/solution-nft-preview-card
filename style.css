@@ -1,0 +1,146 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+body {
+    background-color: hsl(217, 54%, 11%);
+}
+
+.card {
+    width: 350px;
+    height: 600px;
+    margin: 35px auto;
+    border-radius: 10px;
+    box-shadow: 0px 0px 50px hsla(0, 0%, 0%, 0.281);
+    background-color: hsl(216, 50%, 16%);
+}
+
+.cardIn {
+    display: block;
+    width: 300px;
+    height: 550px;
+    margin: auto;
+    padding-top: 25px;
+}
+
+.photograph {
+    width: 300px;
+    margin: auto;
+}
+
+.preview {
+    width: 100%; 
+    border-radius: 10px;
+}
+
+.title {
+    padding-top: 17px;
+    padding-bottom: 15px;
+}
+
+.title h3 {
+    font-family: 'Outfit';
+    font-weight: 400;
+    font-size: 1.5em;
+    color: hsl(0, 0%, 100%);
+}
+
+.description {
+    padding-top: 5px;
+    padding-bottom: 15px;
+}
+
+.description p {
+    font-family: 'Outfit';
+    font-weight: 300;
+    line-height: 190%;
+    color: hsl(215, 51%, 70%);
+}
+
+.priceAndTime {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.price p {
+    font-family: 'Outfit';
+    font-weight: 600;
+    color: hsl(178, 100%, 50%);
+}
+
+.price p::before {
+    content: url(images/icon-ethereum.svg);
+    position: relative;
+    z-index: 100000;
+    top: 3px;
+    margin-right: 5px;
+}
+
+.time p {
+    font-family: 'Outfit';
+    font-weight: 600;
+    color: hsl(215, 51%, 70%);
+}
+
+.time p::before {
+    content: url(images/icon-clock.svg);
+    position: relative;
+    z-index: 100000;
+    top: 3px;
+    margin-right: 5px;
+}
+
+.line {
+    margin-top: 25px;
+    height: 2px;
+    background: hsl(215, 32%, 27%);
+}
+
+.memberRepresentation {
+    display: flex;
+    align-items: center;
+    width: auto;
+    margin: auto;
+    height: 70px;
+}
+
+.memberImage {
+    margin: auto auto auto 2px;
+    width: 40px;
+}
+
+.memberRealPhoto {
+    width: 100%;
+    border: 2px solid hsl(0, 0%, 100%);
+    border-radius: 50%;
+    clip-path: circle();
+}
+
+.creditsDesign {
+    margin-left: -40px;
+    margin-right: auto;
+}
+
+.creditsDesign p {
+    font-family: 'Outfit';
+    font-size: 16px;
+    font-weight: 400;
+    color: hsl(215, 51%, 70%);
+}
+
+.textCredits {
+    font-weight: 400;
+    color: hsl(0, 0%, 100%);
+}
+
+@media screen and (max-width: 375px) {
+    .card {
+        box-shadow: none;
+    }
+}
+
